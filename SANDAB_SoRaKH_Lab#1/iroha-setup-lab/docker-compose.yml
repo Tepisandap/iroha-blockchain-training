@@ -13,7 +13,7 @@ services:
       - "IROHA_POSTGRES_HOST=postgres_1"
     volumes:
       - blockstore_0:/tmp/block_store
-      - /c/Users/sanda/Documents/iroha-setup-lab/config_1:/opt/iroha_data
+      - ./config_1:/opt/iroha_data
     depends_on:
       - postgres_1
     networks:
@@ -32,7 +32,7 @@ services:
       - "IROHA_POSTGRES_HOST=postgres_2"
     volumes:
       - blockstore_1:/tmp/block_store
-      - /c/Users/sanda/Documents/iroha-setup-lab/config_2:/opt/iroha_data
+      - ./config_2:/opt/iroha_data
     depends_on:
       - postgres_2
     networks:
@@ -51,7 +51,7 @@ services:
       - "IROHA_POSTGRES_HOST=postgres_3"
     volumes:
       - blockstore_2:/tmp/block_store
-      - /c/Users/sanda/Documents/iroha-setup-lab/config_3:/opt/iroha_data
+      - ./config_3:/opt/iroha_data
     depends_on:
       - postgres_3
     networks:
@@ -70,7 +70,7 @@ services:
       - "IROHA_POSTGRES_HOST=postgres_3"
     volumes:
       - blockstore_3:/tmp/block_store
-      - /c/Users/sanda/Documents/iroha-setup-lab/config_4:/opt/iroha_data
+      - ./config_4:/opt/iroha_data
     depends_on:
       - postgres_4
     networks:
